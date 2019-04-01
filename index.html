@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hvor kan jeg roame</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <script src="libs/polyfill.js?v2"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://unpkg.com/tabulator-tables@4.2.3/dist/css/tabulator.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/tabulator-tables@4.2.3/dist/css/tabulator_simple.min.css" rel="stylesheet">
-  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.3/dist/js/tabulator.min.js"></script>
-  <script src="libs/zoom.js"></script>
-  <script src="countries.js?v=8"></script>
-
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-
-
-  <style id="compiled-css" type="text/css">
-      body {
-  font-family: arial;
-}
-
-#main {
-    max-width:800px; 
-    margin:0 auto;
-    position: relative;
-}
-#buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-#container {
-  margin-bottom: 5px;
-  overflow: hidden;
-  border: 2px solid silver;
-  border-radius: 6px;
-  background: white;
-}
-
-.zoom-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  border: none;
-  background: silver;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-}
-
-#zoom-info {
-  display: inline-block;
-  padding: 10px;
-}
-#filters {
-    position: relative;
-    top: -2.5em;
-    left: 0.5em;
-}
-  </style>
-
-
-  <script src="libs/datamap.js?v41"></script>
-  <script src="data.js?v4"></script>
-
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
-<script src="libs/datamaps.world.hires.min.js?v2"></script>
+    <title>Hvor kan jeg roame</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://unpkg.com/tabulator-tables@4.2.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tabulator-tables@4.2.3/dist/css/tabulator_simple.min.css" rel="stylesheet">
+    <style id="compiled-css" type="text/css">
+        body {
+            font-family: arial;
+        }
+        
+        #main {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        @media only screen and (min-width: 600px) {
+            #main {
+                width: 90%;
+            }
+        }
+        
+        #buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #container {
+            margin-bottom: 5px;
+            overflow: hidden;
+            border: 2px solid silver;
+            border-radius: 6px;
+            background: white;
+        }
+        
+        .zoom-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            border: none;
+            background: silver;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #zoom-info {
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        #filters {
+            position: relative;
+            top: -2.5em;
+            left: 0.5em;
+        }
+    </style>
 
 </head>
+
 <body>
 
+    <div id="main">
 
-<div id="main">
+        <div id="container" style="position: relative; width: 100%;"></div>
 
-    <div id="container" style="position: relative; width: 100%;  "></div>
+        <div id="buttons">
+            <div id="zoom-info"></div>
+            <button class="zoom-button" data-zoom="reset">0</button>
+            <button class="zoom-button" data-zoom="out">-</button>
+            <button class="zoom-button" data-zoom="in">+</button>
+        </div>
 
-    <div id="buttons">
-        <div id="zoom-info"></div>
-        <button class="zoom-button" data-zoom="reset">0</button>
-        <button class="zoom-button" data-zoom="out">-</button>
-        <button class="zoom-button" data-zoom="in">+</button>
+        <div id="filters">
+            <select id="filter"></select>
+        </div>
+
+        <div id="table"></div>
     </div>
+
+    <script src="libs/polyfill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.3/dist/js/tabulator.min.js"></script>
+    <script src="libs/zoom.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="libs/datamaps.world.hires.min.js?v2"></script>
     
-  <div id="filters"><select id="filter"></select></div>
-
-    <div id="table"></div>
-</div>
-
-<script type="text/javascript">
-new mapData(data);
-</script>
+    <script src="countries.js"></script>
+    <script src="data.js"></script>
+    <script src="libs/datamap.js"></script>
+    <script type="text/javascript">
+        new mapData(data);
+    </script>
 </body>
+
 </html>

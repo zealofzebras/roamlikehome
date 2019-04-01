@@ -4,7 +4,8 @@
 var EU = ["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"];
 
 // Nonmember but part of roaming agreement
-var EEA = ["LI", "NO", "IS"];
+// https://en.wikipedia.org/wiki/European_Union_roaming_regulations under calculations
+var EEA = ["LI", "NO", "IS", "GI"];
 
 // see: http://www.europarl.europa.eu/doceo/document/E-8-2017-000347-ASW_EN.html?redirect
 var EUX = ['MF', 'YT', 'RE', 'MQ', 'GP', 'GF', "AX"];
