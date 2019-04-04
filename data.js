@@ -53,7 +53,7 @@ var data = [
     {
         operator : "Telenor", plan : "Go Blue World", url : "",
         notes : "",
-        freeRoamEU : true, freeRoam : ["ALB", "AUS", "BGD", "BRA", "CAN", "VIR", "PHL", "FRO", "GRL", "HKG", "IDN", "ISR", "JPN", "CHN", "XKX", "MYS", "MEX", "MMR", "NZL", "PAK", "PRI", "RUS", "SGP", "LKA", "ZAF", "KOR", "TWN", "THA", "TUR", "UKR", "USA", "VNM"]
+        freeRoamEU : true, freeRoam : ["ALB", "AUS", "BGD", "BRA", "CAN", "VIR", "PHL", "FRO", "GRL", "HKG", "IDN", "ISR", "JPN", "CHN", /*"XKX"*/ "kosovo", "MYS", "MEX", "MMR", "NZL", "PAK", "PRI", "RUS", "SGP", "LKA", "ZAF", "KOR", "TWN", "THA", "TUR", "UKR", "USA", "VNM"]
     },
     {
         operator : "Telenor", plan : "Business+ Tilbud", url : "",
