@@ -276,3 +276,5 @@ countries["ESH"] = {name:"Western Sahara", a2:"EH", a3:"ESH", un:"732", phone:"2
 countries["YEM"] = {name:"Yemen", a2:"YE", a3:"YEM", un:"887", phone:"967"};
 countries["ZMB"] = {name:"Zambia", a2:"ZM", a3:"ZMB", un:"894", phone:"260"};
 countries["ZWE"] = {name:"Zimbabwe", a2:"ZW", a3:"ZWE", un:"716", phone:"263"};
+
+countries["kosovo"] = {name:"Kosovo", a2:"XK", a3:"kosovo" /* XKX */, un:"", phone:""};
