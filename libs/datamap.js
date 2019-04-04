@@ -15,8 +15,8 @@ function mapData(data) {
 
 
     var paletteScale = d3.scale.linear()
-                .domain([1,3])
-                .range(["#EFEFFF","#02386F"]); // blue color
+                .domain([0,data.length])
+                .range(["#f0f7da","#234d20"]); // blue color
 
     var data_table = [];
 
@@ -122,7 +122,7 @@ function mapData(data) {
             projection: 'mercator',
             done: this._handleMapReady.bind(this),  
             fills: {
-                defaultFill: "#ABDDA4",
+                defaultFill: "#d3d3d3",
             },
             data: data_map,
             geographyConfig: {
