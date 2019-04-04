@@ -40,6 +40,26 @@ var data = [
         notes : "20 GB data",
         freeRoamEU : true, freeRoam : ["BGD", "GUF", "FRO", "GIB", "GLP", "MYS", "MYT", "MMR", "PAK", "REU", "SMR", "THA", "TUR", "USA"]
     },
+    {
+        operator : "Telenor Erhverv", plan : "Business+ (50GB)", url : "",
+        notes : "",
+        freeRoamEU : true, freeRoam : ["USA", "CAN"]
+    },
+    {
+        operator : "Telenor", plan : "Go Blue EU", url : "",
+        notes : "",
+        freeRoamEU : true, freeRoam : []
+    },
+    {
+        operator : "Telenor", plan : "Go Blue World", url : "",
+        notes : "",
+        freeRoamEU : true, freeRoam : ["ALB", "AUS", "BGD", "BRA", "CAN", "VIR", "PHI", "FRO", "GRL", "HKG", "IDN", "ISR", "JPN", "CHN", "XKX", "MYS", "MEX", "MMR", "NZL", "PAK", "PRI", "RUS", "SGP", "LKA", "ZAF", "KOR", "TWN", "THA", "TUR", "UKR", "USA", "VNM"]
+    },
+    {
+        operator : "Telenor", plan : "Business+ Tilbud", url : "",
+        notes : "8 GB data, er ikke offentlig på nettet men kan efterspørges",
+        freeRoamEU : true, freeRoam : ["ALB", "AND", "BIH", "FRO", "GEO", "GRL", "BLR", "MKD", "MDA", "CHE", "THA", "TUR", "UKR", "USA", "CAN"]
+    },
     
     /*
     {
