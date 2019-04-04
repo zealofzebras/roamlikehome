@@ -53,12 +53,12 @@ var data = [
     {
         operator : "Telenor", plan : "Go Blue World", url : "",
         notes : "",
-        freeRoamEU : true, freeRoam : ["ALB", "AUS", "BGD", "BRA", "CAN", "VIR", "PHL", "FRO", "GRL", "HKG", "IDN", "ISR", "JPN", "CHN", /*"XKX"*/ "kosovo", "MYS", "MEX", "MMR", "NZL", "PAK", "PRI", "RUS", "SGP", "LKA", "ZAF", "KOR", "TWN", "THA", "TUR", "UKR", "USA", "VNM"]
+        freeRoamEU : true, freeRoam : ["ALB", "AUS", "BGD", "BRA", "CAN", "VIR", "PHL", "FRO", "GRL", "HKG", "IDN", "ISR", "JPN", "CHN", /*"XKX"*/ "kosovo", "MYS", "MEX", "MMR", "NZL", "PAK", "PRI", "RUS", "SGP", "LKA", "ZAF", "KOR", "TWN", "THA", "TUR", "UKR", "USA", "VNM","IMN","GGY","PYF","JEY"]
     },
     {
         operator : "Telenor", plan : "Business+ Tilbud", url : "",
         notes : "8 GB data, er ikke offentlig på nettet men kan efterspørges",
-        freeRoamEU : true, freeRoam : ["ALB", "AND", "BIH", "FRO", "GEO", "GRL", "BLR", "MKD", "MDA", "CHE", "THA", "TUR", "UKR", "USA", "CAN"]
+        freeRoamEU : true, freeRoam : ["ALB", "AND", "BIH", "FRO", "GEO", "GRL", "BLR", "MKD", "MDA", "CHE", "THA", "TUR", "UKR", "USA", "CAN", "IMN","GGY","kosovo","JEY"]
     },
     
     /*
